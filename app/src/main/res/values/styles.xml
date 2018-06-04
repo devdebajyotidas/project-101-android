@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HomeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/gray400</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar" parent="android:Widget.RatingBar">
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Small">
+        <item name="android:minHeight">18dp</item>
+        <item name="android:maxHeight">18dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Indicator">
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar.Indicator.Small">
+        <item name="android:minHeight">20dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+    <style name="MyTabLayoutTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/purple</item>
+    </style>
+
+    <style name="RippleStyle">
+        <item name="rippleOverlay">true</item>
+        <item name="rippleColor">@color/gray300</item>
+        <item name="rippleAlpha">0.7</item>
+        <item name="rippleDimension">45dp</item>
+        <item name="rippleHover">true</item>
+        <item name="rippleDuration">200</item>
+        <item name="rippleFadeDuration">50</item>
+        <item name="rippleBackground">@android:color/transparent</item>
+        <item name="rippleDelayClick">true</item>
+        <item name="ripplePersistent">false</item>
+        <item name="rippleInAdapter">false</item>
+    </style>
+
+
+    <style name="TextLabelblue" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/gray400</item>
+        <!--  <item name="android:textSize">20sp</item>-->
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/four</item>
+        <item name="colorControlNormal">@color/gray400</item>
+        <item name="colorControlActivated">@color/four</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+</resources>

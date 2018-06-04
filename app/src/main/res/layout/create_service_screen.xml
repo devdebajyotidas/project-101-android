@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:paddingTop="24dp"
+    android:paddingBottom="10dp"
+    android:layout_margin="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/testcolor"
+        android:layout_marginTop="4dp"
+        android:textSize="@dimen/text_16"
+        android:text="New Service"/>
+
+    <Spinner
+        android:id="@+id/serviceSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/service_spinner_bg"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/services" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:theme="@style/TextLabelblue">
+        <EditText
+            android:id="@+id/rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Rate*"
+            android:textColor="@color/testcolor"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+  <!--  <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:theme="@style/TextLabelblue">
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/LOCATION"
+            android:textColor="@color/testcolor"
+            android:inputType="textCapWords"/>
+    </android.support.design.widget.TextInputLayout>
+-->
+    <com.seatgeek.placesautocomplete.PlacesAutocompleteTextView
+        android:id="@+id/location"
+        android:hint="@string/LOCATION"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:pacv_googleMapsApiKey="AIzaSyDIoyl48T6r8uVOLSmKJHoCAYVKe7ydaU8"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"/>
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="CANCEL"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="@dimen/text_14"
+            android:gravity="center"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".5"/>
+
+        <TextView
+            android:id="@+id/save"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="SAVE"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="@dimen/text_14"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>

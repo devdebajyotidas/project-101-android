@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- <color name="one">#0cebeb</color>
+    <color name="two">#20e3b2</color>
+    <color name="three">#29ffc6</color>-->
+
+     <color name="one">#38B5ED</color>
+    <color name="two">#38B5ED</color>
+    <color name="three">@color/testcolor</color>
+    <color name="four">#7984f3</color>
+
+    <color name="colorPrimary">@color/one</color>
+    <color name="colorPrimaryDark">@color/two</color>
+    <color name="colorAccent">@color/three</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+    <!--<color name="starblue">#09c6df</color>-->
+    <color name="starblue">#27c2f0</color>
+    <color name="deepblue">#2196F3</color>
+    <color name="stargreen">#1ae8a9</color>
+    <color name="starpurple">#bb61ff</color>
+    <color name="home_widgetbg">#f8f9fc</color>
+
+    <color name="ratingbarprimary">#bb61ff</color>
+    <color name="ratingbarSecondary">#d2bb61ff</color>
+
+
+    <color name="gray900_trn">#e5212121</color>
+    <color name="gray900">#212121</color>
+    <color name="gray800">#424242</color>
+    <color name="gray700">#616161</color>
+    <color name="gray600">#757575</color>
+    <color name="gray500">#9E9E9E</color>
+    <color name="gray400">#BDBDBD</color>
+    <color name="gray300">#E0E0E0</color>
+    <color name="gray200">#EEEEEE</color>
+    <color name="gray100">#F5F5F5</color>
+    <color name="gray50">#FAFAFA</color>
+
+    <color name="purple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="pink">#fe104d</color>
+
+    <color name="darkblue">#23283a</color>
+    <color name="testcolor">#183e54</color>
+
+    <color name="transperent">#66000000</color>
+    <color name="tranwhite">#84ffffff</color>
+    <color name="shadow">#40CCCCCC</color>
+
+
+ <color name="default_header_color">#00000000</color>
+ <color name="indicator">#0960bd</color>
+
+
+
+</resources>

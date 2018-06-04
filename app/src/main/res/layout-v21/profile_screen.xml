@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="RtlHardcoded">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            app:titleEnabled="false">
+            <views.ProfileSquare
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_collapseMode="pin">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/cl1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toTopOf="@+id/cl2"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_weight="80">
+
+                        <ImageView
+                            android:id="@+id/email"
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:contentDescription="@string/profile_image"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/email"
+                            app:layout_constraintBottom_toBottomOf="parent" />
+
+                        <ImageView
+                            android:id="@+id/bImg"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:contentDescription="@string/profile_image"
+                            android:scaleType="fitXY"
+                            android:src="@mipmap/profile_bg"
+                            app:layout_constraintBottom_toTopOf="@id/email"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            app:layout_constraintBottom_toTopOf="@+id/email">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:contentDescription="@string/profile_image"
+                                android:src="@mipmap/call_white" />
+                        </LinearLayout>
+
+
+                        <View
+                            android:id="@+id/anchor"
+                            android:layout_width="20dp"
+                            android:layout_height="1dp"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/ll1"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="?attr/actionBarSize"
+                                android:gravity="center_vertical"
+                                tools:ignore="UselessParent">
+
+                                <LinearLayout
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:contentDescription="@string/profile_image"
+                                        android:src="@mipmap/back"
+                                        tools:ignore="TooDeepLayout" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:paddingEnd="40dp"
+                                    android:paddingStart="40dp"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        android:layout_width="16dp"
+                                        android:layout_height="16dp"
+                                        android:contentDescription="@string/profile_image"
+                                        android:src="@mipmap/marker" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="4dp"
+                                        android:text="Mecheda,West Bengal"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/text_12" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:id="@+id/profileMenu"
+                                    android:layout_width="40dp"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+
+                                    <ImageView
+                                        android:layout_width="14dp"
+                                        android:layout_height="14dp"
+                                        android:contentDescription="@string/profile_image"
+                                        android:src="@mipmap/menu"
+                                        tools:ignore="TooDeepLayout" />
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                        <Space
+                            android:id="@+id/ll2tSpace"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toTopOf="@+id/ll2"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_weight="52" />
+
+                        <Space
+                            android:id="@+id/ll2lSpace"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/ll2" />
+
+                        <LinearLayout
+                            android:id="@+id/ll2"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:baselineAligned="false"
+                            android:orientation="vertical"
+                            android:padding="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintLeft_toRightOf="@id/ll2lSpace"
+                            app:layout_constraintRight_toRightOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ll2tSpace"
+                            app:layout_constraintVertical_weight="45">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="James Riyadi"
+                                android:textColor="@color/testcolor"
+                                android:textSize="@dimen/text_18" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="4dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="6dp"
+                                    android:drawableStart="@mipmap/purple_circle"
+                                    android:text="Professional Builder"
+                                    android:textColor="@color/testcolor"
+                                    android:textSize="@dimen/text_10" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:drawablePadding="6dp"
+                                    android:drawableStart="@mipmap/purple_circle"
+                                    android:text="Verified User"
+                                    android:textColor="@color/testcolor"
+                                    android:textSize="@dimen/text_10" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <Space
+                            android:id="@+id/pvspace"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toTopOf="@+id/profileImage"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_weight="60" />
+
+                        <Space
+                            android:id="@+id/phspace"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintHorizontal_weight="35"
+                            app:layout_constraintLeft_toRightOf="@+id/profileImage"
+                            app:layout_constraintRight_toRightOf="parent" />
+
+                        <views.CircleImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:src="@mipmap/man"
+                            app:civ_border_width="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintHorizontal_weight="65"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintRight_toLeftOf="@+id/phspace"
+                            app:layout_constraintTop_toBottomOf="@id/pvspace"
+                            app:layout_constraintVertical_weight="60" />
+
+                    </android.support.constraint.ConstraintLayout>
+
+
+                    <android.support.constraint.ConstraintLayout
+                        android:id="@+id/cl2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cl1"
+                        app:layout_constraintVertical_weight="30">
+
+                        <Space
+                            android:id="@+id/ll3bspace"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/ll3"
+                            app:layout_constraintVertical_weight="10" />
+
+                        <LinearLayout
+                            android:id="@+id/ll3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:baselineAligned="false"
+                            app:layout_constraintBottom_toTopOf="@+id/ll3bspace"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_weight="90">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="bottom"
+                                android:orientation="vertical"
+                                android:paddingEnd="0dp"
+                                android:paddingStart="10dp"
+                                android:paddingTop="20dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/DONE"
+                                        android:textColor="@color/gray500"
+                                        android:textSize="@dimen/text_12" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="@string/ONGOING"
+                                        android:textColor="@color/gray500"
+                                        android:textSize="@dimen/text_12" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="45"
+                                        android:textColor="@color/testcolor"
+                                        android:textSize="@dimen/text_14" />
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:text="2"
+                                        android:textColor="@color/gray500"
+                                        android:textSize="@dimen/text_14" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="40dp"
+                                    android:layout_height="2dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@color/testcolor" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:orientation="vertical"
+                                android:paddingEnd="10dp"
+                                android:paddingStart="10dp">
+
+                                <views.ratingbar.MaterialRatingBar
+                                    style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="-2dp"
+                                    android:rating="2.5"
+                                    app:mrb_progressTint="@color/ratingbarprimary"
+                                    app:mrb_secondaryProgressTint="@color/ratingbarSecondary" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </android.support.constraint.ConstraintLayout>
+                </android.support.constraint.ConstraintLayout>
+            </views.ProfileSquare>
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <views.NavigationTabStrip
+            android:id="@+id/profileTabs"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:tag="sticky"
+            app:nts_active_color="@color/gray700"
+            app:nts_color="@color/four"
+            app:nts_corners_radius="4dp"
+            app:nts_factor="2.8"
+            app:nts_gravity="bottom"
+            app:nts_inactive_color="@color/gray500"
+            app:nts_size="@dimen/text_12"
+            app:nts_titles="@array/profile_tabs"
+            app:nts_type="line"
+            app:nts_weight="2dp" />
+
+    </android.support.design.widget.AppBarLayout>
+   <!-- <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </android.support.v4.widget.NestedScrollView>-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</android.support.design.widget.CoordinatorLayout>

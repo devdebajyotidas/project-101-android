@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/allservice_image"
+        android:scaleType="fitXY"
+        android:src="@mipmap/loginbelow_img"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Space
+        android:id="@+id/leftSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/loginLinear" />
+
+    <Space
+        android:id="@+id/rightSpace"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHorizontal_weight="10"
+        app:layout_constraintLeft_toRightOf="@+id/loginLinear"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/topLinear"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_vertical"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:contentDescription="@string/profile_image"
+                android:src="@mipmap/back"
+                android:tint="@color/testcolor"
+                tools:ignore="TooDeepLayout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            tools:ignore="UseCompoundDrawables">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Service"
+                android:textColor="@color/testcolor"
+                app:layout_constraintLeft_toRightOf="@+id/leftSpace"
+                app:layout_constraintRight_toLeftOf="@+id/rightSpace"
+                android:textSize="@dimen/text_22" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginLinear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintHorizontal_weight="85"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toRightOf="@+id/leftSpace"
+        app:layout_constraintRight_toLeftOf="@+id/rightSpace"
+        app:layout_constraintTop_toBottomOf="@+id/topLinear">
+        <Spinner
+            android:id="@+id/serviceSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/service_spinner_bg"
+            android:drawSelectorOnTop="true"
+            android:entries="@array/services" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="20dp">
+            <fragment
+                android:id="@+id/place_autocomplete_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+
+            <LinearLayout
+                android:id="@+id/locLinear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#f3f3f3"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/locName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:paddingLeft="6dp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:text="Select Location"
+                    android:textColor="@color/gray600" />
+
+
+                <LinearLayout
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:contentDescription="@string/profile_image"
+                        android:src="@drawable/location"
+                        android:tint="@color/four"
+                        tools:ignore="TooDeepLayout" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tryAnotherMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:elevation="1dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="Radius"
+            android:textColor="@color/gray500"
+            android:textSize="@dimen/text_14" />
+        <views.seekbar.DynamicSeekBarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:dsbv_max="25"
+            app:dsbv_progress="10"
+            app:dsbv_infoBackgroundColor="@color/four"/>
+
+
+        <views.FloatingSquareBtn
+            android:id="@+id/applyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="@drawable/primarysolid_bg"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:text="Apply"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16"
+            app:layout_constraintRight_toLeftOf="@id/rightSpace"
+            app:layout_constraintLeft_toRightOf="@id/signUp"
+            app:layout_constraintTop_toBottomOf="@+id/loginLinear"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

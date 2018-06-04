@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">NewProject</string>
+    <string name="MAP_API_KEY">AIzaSyAZi0T5kQhI81C_0JSkuJbzHnyTmCK875I</string>
+
+    <string name="home_image">Home Screen Image</string>
+    <string name="listservice_image">List Service Image</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="allservice_image">All Service Image</string>
+    <string name="service_image">Service Image</string>
+    <string name="login_image">Service Image</string>
+
+    <!--Home Screen-->
+    <string name="DETAIL">DETAIL</string>
+    <string name="SEE_FULL_MAP">See Full Map</string>
+    <string name="ONGOING">Ongoing</string>
+    <string name="DONE">Done</string>
+    <string name="EDIT">Edit</string>
+    <string name="FAVOURITE">Favourite</string>
+    <string name="LOCATION">Location</string>
+    <string name="REPORT">Report</string>
+    <string name="KMRange">KM range</string>
+    <string name="PRICE_RANGE">Price range</string>
+    <string name="SERVICES">Services</string>
+    <string name="PROCEED">Proceed</string>
+    <string name="CREATE">Create</string>
+    <string name="DESCRIPTION">Description</string>
+    <string name="EMAIL">Email</string>
+    <string name="NUMBER">Number</string>
+    <string name="DOB">DOB</string>
+    <string name="ADDRESS">Address</string>
+    <string name="AADHAAR_NO">Aadhaar Number</string>
+    <string name="PIN">PIN Code</string>
+    <string name="PAN">PAN Number</string>
+    <string name="PROCESSING">Processing</string>
+    <string name="VERIFIED">Verified</string>
+    <string name="RIGHT_INFO">Please provide right information</string>
+    <string name="USE_CURRENT_LOCATION">Use current location</string>
+    <string name="ADD_SERVICE">ADD SERVICE</string>
+    <string name="ALL_SERVICE">All Services</string>
+    <string name="ADV_LOGIN">Advance Login</string>
+    <string name="LOGIN">Login</string>
+    <string name="SIGNUP">Signup</string>
+    <string name="VERIFY">Verify</string>
+    <string name="ENTER_OTP">Enter OTP</string>
+    <string name="SENT_OTP">We have sent you access code Via SMS for mobile number verification</string>
+    <string name="OTP_NOT_RECEIVED">Did not Receive the OTP?</string>
+    <string name="NEXT">Next</string>
+    <string name="BACK_LOGIN">Back to Login</string>
+    <string name="RESEND">Resend</string>
+    <string name="PHONE_NO">Phone Number</string>
+    <string name="OTP">OTP</string>
+    <string name="PASSWORD">Password</string>
+    <string name="CONFIRM_PASSWORD">Confirm Password</string>
+    <string name="FORGOT">Forgot?</string>
+    <string name="IS_PROVIDER">Is Provider</string>
+
+
+    <string name="VERIFIED_USER">User varified with Aadhar and Mobile Number</string>
+    <string name="CREATE_PROFILE">Complete your profile and SET STARTED\nwith our free service\nto connect business and clients.</string>
+
+
+    <string-array name="spin">
+        <item>Select Service Category</item>
+    </string-array>
+    <string-array name="services">
+        <item>Select Service Category</item>
+        <item>Plumbers</item>
+        <item>Electrician</item>
+        <item>Sweepers</item>
+    </string-array>
+    <string-array name="home_spin">
+        <item>Builder</item>
+    </string-array>
+
+    <string-array name="profile_tabs">
+        <item>Profile</item>
+        <item>Services</item>
+        <item>Reviews</item>
+    </string-array>
+    <string-array name="provider_profile_tabs">
+        <item>PROFILE</item>
+        <item>SERVICES</item>
+        <item>REVIEWS</item>
+    </string-array>
+    <string-array name="tracker_profile_tabs">
+        <item>PROFILE</item>
+        <item>SERVICES</item>
+    </string-array>
+
+    <string-array name="allservice_tabs">
+        <item>Active service</item>
+        <item>Closed service</item>
+        <item>Pending</item>
+    </string-array>
+    <string name="title_activity_homeforprovider">Home</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_homefor_provider">HomeforProvider</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="crop_shapes">
+        <item>Rectangle</item>
+        <item>Oval</item>
+    </string-array>
+    <string name="title_crop_gallery">Crop gallery</string>
+    <string name="title_crop">Crop</string>
+
+    <string name="title_choose_image">Open</string>
+
+    <string name="msg_crop_failed">Crop failed: %s</string>
+
+    <string name="btn_new_crop">New crop</string>
+
+    <string name="transition_view_image" translatable="false">view_image</string>
+    <string name="mi_done">Done</string>
+
+    <string-array name="save_format">
+        <item>PNG</item>
+        <item>JPEG</item>
+        <item>WEBP</item>
+    </string-array>
+
+
+</resources>
